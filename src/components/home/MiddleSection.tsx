@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   Box,
@@ -8,11 +8,15 @@ import {
   Code,
   Link,
   Button,
+  UnorderedList,
+  ListItem,
+  LinkBox,
 } from "@chakra-ui/react";
+import { h4 } from "framer-motion/client";
 
 export const MiddleSection = () => {
   return (
-    <Box maxW="800px" mx="auto" py={8} px={4}>
+    <Box maxW="800px" mx="auto" py={8} px={4} fontSize={"lg"}>
       <Heading as="h1" size="xl" mb={6}>
         Getting started with Vercel Web Analytics
       </Heading>
@@ -31,6 +35,54 @@ export const MiddleSection = () => {
         Select your framework to view instructions on using the Vercel Web
         Analytics in your project.
       </Text>
+
+      <Box mb={8}>
+        <Heading
+          size={"lg"}
+          _hover={{
+            textDecoration: "underline",
+            textDecorationThickness: "1px",
+            textUnderlineOffset: "12px",
+          }}
+          mb={6}
+        >
+          Prerequisites
+        </Heading>
+        <UnorderedList styleType="'-  '">
+          <ListItem>
+            A Vercel account. If you don't have one, you can
+            <Link
+              href="https://vercel.com/signup"
+              textDecoration={"underline"}
+              fontWeight="semibold"
+              textDecorationThickness= {"1px"}
+            textUnderlineOffset= {"6px"}
+            px={"4px"}
+            >
+              sign up for free
+            </Link>
+            .
+          </ListItem>
+          <ListItem>
+            A Vercel project. If you don't have one, you can <Link
+              href="https://vercel.com/signup"
+              textDecoration={"underline"}
+              fontWeight="semibold"
+              textDecorationThickness= {"1px"}
+            textUnderlineOffset= {"6px"}
+            px={"4px"}
+            >
+              create a new project
+            </Link>
+            .   
+          </ListItem>
+          <ListItem>
+            The Vercel CLI installed. If you don't have it, you can install it
+            using the following command:
+          </ListItem>
+        </UnorderedList>
+      </Box>
+
       <VStack spacing={6} align="stretch">
         {/* Step 1 */}
         <Box>

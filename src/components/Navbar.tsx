@@ -5,30 +5,27 @@ import {
     Flex, 
     Text, 
     Button, 
-    Input, 
-    InputGroup, 
-    InputLeftElement,
     Avatar,
     Menu,
     MenuButton,
     MenuList,
     MenuItem
   } from "@chakra-ui/react";
-  import { SearchIcon, ChevronDownIcon } from "@chakra-ui/icons";
+  import { ChevronDownIcon } from "@chakra-ui/icons";
   import Link from "next/link";
   
   export default function Navbar() {
     return (
       <Box bg="white" borderBottom="1px" borderColor="gray.200" px={4} py={3}>
         <Flex justify="space-between" align="center" maxW="1200px" mx="auto">
-          {/* Logo dan Menu Kiri */}
+
           <Flex align="center">
             <Link href="/">
               <Text fontWeight="bold" fontSize="xl" mr={10}>Vercel</Text>
             </Link>
           </Flex>
   
-          {/* Search dan Menu Kanan */}
+
           <Flex align="center" gap={4}>
 
   

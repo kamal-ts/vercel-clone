@@ -8,11 +8,8 @@ export default function Home() {
     <ChakraProvider>
       <Navbar/>
       <Flex>
-        {/* SidePanel di sebelah kiri */}
         <SidePanel />
-        
-        {/* MiddleSection sebagai konten utama */}
-        <Box flex={1} > {/* ml untuk memberi space sebesar width SidePanel */}
+        <Box flex={1} > 
           <MiddleSection />
         </Box>
       </Flex>
