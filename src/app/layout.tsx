@@ -1,17 +1,15 @@
-// app/layout.tsx
-'use client'
+import { Providers } from "./providers";
 
-import { ChakraProvider } from '@chakra-ui/react'
-import { ReactNode } from 'react'
-
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body>
-        <ChakraProvider >
-          {children}
-        </ChakraProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
-  )
+  );
 }
