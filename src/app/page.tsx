@@ -6,9 +6,9 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
     <ChakraProvider>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Flex>
-        <SidePanel />
+        {/* <SidePanel /> */}
         <Box flex={1} > 
           <MiddleSection />
         </Box>
